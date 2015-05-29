@@ -1,0 +1,160 @@
+body{
+  font-family: 'Helvetica', Arial;
+  margin: 0px;
+  padding: 2px;
+  max-height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#products {
+  height: auto;
+  width: 100%;
+}
+.product {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  height: 250px;
+  float: left;
+}
+
+.product-wrap {
+    border: 1px #282828 solid;
+    padding: 5px;
+    margin: 2px;
+    height: 234px;
+}
+
+.product-id {
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  height: 50%;
+  padding: 0;
+  margin: 0;
+  background-image: url("../images/dog.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: none;
+}
+.product-id span {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.product-features {
+  width: 100%;
+  height: 50%;
+  padding: 0;
+  margin: 0;
+  float: none;
+  position:relative;
+}
+
+.product-features ul {
+  font-size: 10px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.features-label {
+  width: 40%;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  color: #337900;
+  float: left;
+  margin-right: 10px;
+}
+.features-value {
+  width: 40%;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 30px solid #337900;
+    border-left: 30px solid transparent;
+    float: right;
+    margin-top: -122px;
+    margin-right: -5px;
+}
+.triangle:hover {
+    border-top: 30px solid #1e4800;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (min-width: 561px) {
+  body{
+    padding: 6px;
+  }
+  #products {
+    -moz-column-width: 446px;
+    -webkit-column-width: 446px;
+    column-width: 446px;
+    -moz-column-gap: 0px;
+    -webkit-column-gap: 0px;
+    column-gap: 0px;
+    -moz-column-fill: auto;
+    -webkit-column-fill: auto;
+    column-fill: auto;
+    margin-left: 4px;
+  }
+  .triangle {
+      margin-top: -5px;
+      margin-right: -5px;
+  }
+  .product {
+    margin: 0;
+    margin-bottom: 6px;
+    padding: 0px;
+    display: inline-block;
+    width: 440px;
+    height: 230px;
+    float: none;
+  }
+  .product-wrap {
+      margin: 0px;
+      padding: 5px;
+      width: 428px;
+      height: 218px;
+  }
+  .product-id {
+    width: 50%;
+    height: 100%;
+    float: left;
+  }
+  .product-features {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position:relative;
+  }
+
+  .product-features ul {
+    font-size: 12px;
+  }
+
+}

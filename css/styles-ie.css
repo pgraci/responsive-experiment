@@ -1,0 +1,23 @@
+ul {
+    word-spacing: -.5em;
+    writing-mode: tb-lr;
+
+}
+
+li {
+    writing-mode: lr-tb;
+    word-spacing: normal;
+
+}
+
+*+html ul {
+    writing-mode: tb-rl;
+    filter: flipV();
+}
+
+*+html li {
+    display: inline;
+    zoom: 1;
+    filter:flipH();
+    background: #fff;
+}
