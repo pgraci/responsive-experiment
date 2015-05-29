@@ -5,6 +5,8 @@ demo: http://philgraci.com/responsive-experiment
 
 The challenge with this experiment was to complete the following using only jQuery, and no CSS framework.
 
+Load data from JSON.
+
 When the page is 560 px or smaller, the items will scroll vertically.  
 Items will line up L to R, then continue a new row below.
 
